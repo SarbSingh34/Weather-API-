@@ -4,7 +4,7 @@ var buttonpart =  document.querySelector("#button-part")
 var outputpart = document.querySelector("#output-two")
 
 var serverURL = "http://api.openweathermap.org/data/2.5/weather?q="
-var key = "&APPID=d3446f47edcdc6112d572819e1ee43af"
+var key = "&appid=d3446f47edcdc6112d572819e1ee43af"
 
 function getTranslationURL(text)
 {
@@ -17,7 +17,7 @@ buttonpart.addEventListener ("click" , EventHandler )
  function EventHandler()
 {
 // input taken
-    var inputText = inputpart.innerText;
+    var inputText = inputpart.value;
 
     fetch(getTranslationURL(inputText))
     
@@ -25,14 +25,9 @@ buttonpart.addEventListener ("click" , EventHandler )
       .then(json => 
       {
         
-        var translatedText = " country: " + json['sys']['country'] + " temperature: " + json['main']['temp'] ;
+        var translatedText = "|  country: " + json['sys']['country'] + " | Temperature: " + json['main']['temp']+ " | Weather: "  + json['weather'][0]['description']+ "| Wind/Speed: "+ json['wind']['speed'] ;
         outputpart.innerText = translatedText;
         
        }
      )
-
-     
 }
-
-
-

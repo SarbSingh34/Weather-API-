@@ -1,0 +1,28 @@
+*
+{
+
+margin:0px;
+padding:0px;
+
+} 
+ #frontpart
+{
+    background-color: aqua;
+    padding: 2rem 2.5rem;
+    height: 2rem;
+    font-family: cursive;
+}
+textarea
+{
+
+  margin: 2rem 9rem;
+  padding: 4rem 6rem;
+  min-width: 50%;
+
+}
+part-one
+{
+
+padding: 4rem;
+
+}
