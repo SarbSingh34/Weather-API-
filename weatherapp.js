@@ -10,7 +10,6 @@ function getTranslationURL(text)
 {
   return   serverURL +  text + key ; 
 }
-
 buttonpart.addEventListener ("click" , EventHandler ) 
  function EventHandler()
 {
@@ -23,9 +22,10 @@ buttonpart.addEventListener ("click" , EventHandler )
       .then(json => 
       {
         
-        var translatedText = "| country: " + json['sys']['country'] + " | Temperature: " + json['main']['temp']+ " | Weather: "  + json['weather'][0]['description']+ "| Wind/Speed: "+ json['wind']['speed'] ;
+        var translatedText = " country: " + json['sys']['country'] + " | Temperature: " + json['main']['temp']+ " | Weather: "  + json['weather'][0]['description']+ "| Wind/Speed: "+ json['wind']['speed'] ;
         outputpart.innerText = translatedText;
         
        }
      )
 }
+sss
