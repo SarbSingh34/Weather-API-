@@ -8,9 +8,7 @@ var key = "&appid=d3446f47edcdc6112d572819e1ee43af"
 
 function getTranslationURL(text)
 {
-
   return   serverURL +  text + key ; 
-
 }
 
 buttonpart.addEventListener ("click" , EventHandler ) 
@@ -25,7 +23,7 @@ buttonpart.addEventListener ("click" , EventHandler )
       .then(json => 
       {
         
-        var translatedText = "|  country: " + json['sys']['country'] + " | Temperature: " + json['main']['temp']+ " | Weather: "  + json['weather'][0]['description']+ "| Wind/Speed: "+ json['wind']['speed'] ;
+        var translatedText = "| country: " + json['sys']['country'] + " | Temperature: " + json['main']['temp']+ " | Weather: "  + json['weather'][0]['description']+ "| Wind/Speed: "+ json['wind']['speed'] ;
         outputpart.innerText = translatedText;
         
        }
