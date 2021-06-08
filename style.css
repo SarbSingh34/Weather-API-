@@ -15,11 +15,13 @@ padding:0px;
 textarea
 {
 
-  margin: 1rem 8rem;
-  padding: 4rem;
-  min-width: 60%;
+  margin: auto;
+  display: block;
+  padding: 2rem 1rem 2rem;
+  width: 30%;
   /* align-content: center; */
   text-align: center;
+  align-content: center;
 }
 
 img
@@ -30,4 +32,8 @@ margin:auto;
 width:28%;
 
 }
+.webpart
+{
 
+
+}
