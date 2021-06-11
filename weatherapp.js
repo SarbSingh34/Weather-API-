@@ -28,4 +28,3 @@ buttonpart.addEventListener ("click" , EventHandler )
        }
      )
 }
-sss
