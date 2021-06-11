@@ -3,7 +3,7 @@ var inputpart  =  document.querySelector("#input-one")
 var buttonpart =  document.querySelector("#button-part")
 var outputpart = document.querySelector("#output-two")
 
-var serverURL = "http://api.openweathermap.org/data/2.5/weather?q="
+var serverURL = "https://api.openweathermap.org/data/2.5/weather"
 var key = "&appid=d3446f47edcdc6112d572819e1ee43af"
 
 function getTranslationURL(text)
