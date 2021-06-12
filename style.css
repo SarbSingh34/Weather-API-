@@ -20,13 +20,16 @@ padding:0px;
 textarea
 {   
   margin: 3rem 2.9rem;
-  display: block;
-  padding: 3rem 2.5rem 1rem 4rem;
-  /* padding-left: 2rem; */
-  align-content: center;
-  border: 4px solid deepskyblue;
-  border-radius: 50px;
+    padding: 2rem 2.5rem 1rem 4rem;
+    align-content: center;
+    border: 7px solid darkgoldenrod;
+    border-style: double;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
+
 
 img
 {
@@ -44,6 +47,7 @@ button
   border-radius: 40px;
   padding: 0.6rem;
   cursor: pointer;
+  border-style: inset;
 }
 
 h2
@@ -95,6 +99,7 @@ column
 .part-one
 {
 width: 40%;
+margin: 12px;
 
 }
 .part-two
@@ -105,5 +110,23 @@ width: 40%;
 .part-three
 {
   width: 40%;
-
 }
+#output-two
+{
+
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem;
+  box-sizing: border-box;
+  border-radius: 4px solid black;
+  border: 3 px solid black;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  font-weight: 200px;
+  font-size: x-large;
+  border: 7px solid darkgoldenrod;
+  border-style: double;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
