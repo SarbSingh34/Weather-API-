@@ -1,5 +1,4 @@
-var inputpart  =  document.querySelector("#texpart")
-
+var inputpart  =  document.querySelector("#textpart")
 var buttonpart =  document.querySelector("#button-part")
 var outputpart = document.querySelector("#output-two")
 
@@ -10,17 +9,19 @@ function getTranslationURL(text)
 {
   return   serverURL +  text + key ; 
 }
+
 buttonpart.addEventListener ("click" , EventHandler ) 
  function EventHandler()
+
 {
 // input taken
-    var inputText = textpart.value;
 
+    var inputText = textpart.value;
     fetch(getTranslationURL(inputText))
     
       .then(response => response.json())
       .then(json => 
-      {
+       {
         
         var translatedText = " country: " + json['sys']['country'] + " | Temperature: " + json['main']['temp']+ " | Weather: "  + json['weather'][0]['description']+ "| Wind/Speed: "+ json['wind']['speed'] ;
         outputpart.innerText = translatedText;
